@@ -5,7 +5,7 @@ export default function MyResume() {
     <div>
       <h1>My Resume</h1>
       {/* the word "resume" should be highlighted and change colors when hover/click, link to LinkedIn */}
-      <h2>Click to download my resume.</h2>
+      <p><em>Click to download my <mark>resume</mark>.</em></p>
       <body>
         <h3>Front-end Proficiencies</h3>
         <ul>

@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client'
 // req imports from React router DOM
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-// TODO: add pico css import here
-import '@picocss/pico/scss/pico';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
 // about me will function like a "home" page, want it to be the first page that is rendered
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true,
+        path:'/',
         element: <AboutMe />,
       },
       {

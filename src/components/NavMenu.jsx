@@ -5,11 +5,11 @@ function NavMenu() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav">
       <li className="nav-item">
         <Link
-          to="/AboutMe"
-          className={currentPage === '/' ? 'nav-link contrast' : 'nav-link'}
+          to="/"
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
         >
           AboutMe
         </Link>
@@ -17,7 +17,7 @@ function NavMenu() {
       <li className="nav-item">
         <Link
           to="/Portfolio"
-          className={currentPage === '/Portfolio' ? 'nav-link contrast' : 'nav-link'}
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
         </Link>
@@ -25,7 +25,7 @@ function NavMenu() {
       <li className="nav-item">
         <Link
           to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link contrast' : 'nav-link'}
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
         </Link>
@@ -33,7 +33,7 @@ function NavMenu() {
       <li className="nav-item">
         <Link
           to="/MyResume"
-          className={currentPage === '/MyResume' ? 'nav-link contrast' : 'nav-link'}
+          className={currentPage === '/MyResume' ? 'nav-link active' : 'nav-link'}
         >
           MyResume
         </Link>
