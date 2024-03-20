@@ -7,12 +7,16 @@ export default function Contact() {
       {/* if email not valid, notif = "entered invalid email address" */}
       <form>
         <div class="form-group">
+          <label for="nameInput">Name:</label>
+          <input type="name" class="form-control" id="nameInput" placeholder="Your Name" />
+        </div>
+        <div class="form-group">
           <label for="emailInput">Email:</label>
           <input type="email" class="form-control" id="emailInput" placeholder="Email" />
         </div>
         <div class="form-group">
-          <label for="nameInput">Name:</label>
-          <input type="name" class="form-control" id="nameInput" placeholder="Your Name" />
+          <label for="msgInput">Message:</label>
+          <textarea class="form-control" rows="3" id="textarea" placeholder="Thoughts, questions, ideas? Contact Me :)"></textarea>
         </div>
         <button type="submit" class="btn btn-danger">Submit</button>
       </form>
