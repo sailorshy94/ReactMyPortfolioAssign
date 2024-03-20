@@ -11,7 +11,7 @@
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="container">
       <h1>Portfolio Page</h1>
     </div>
   );
