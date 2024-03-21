@@ -14,7 +14,7 @@ function NavMenu() {
       <ul className="nav" >
         <li className="nav-item">
           <Link
-            to="/AboutMe"
+            to="/"
             className={currentPage === '/' ? 'nav-link contrast' : 'nav-link'}
           >
             AboutMe
