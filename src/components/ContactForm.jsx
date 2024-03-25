@@ -11,7 +11,7 @@ function Form() {
     //   };
     //  onBlur={handleBlur}
     return (
-        <form style={{fontSize: '23px'}}>
+        <form style={{fontSize: "23px"}}>
             <div class="form-group">
                 <label for="nameInput">Name:</label>
                 <input type="name" class="form-control" placeholder="Your Name" />

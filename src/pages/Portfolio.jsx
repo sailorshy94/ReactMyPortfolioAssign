@@ -9,6 +9,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
 
+// import proj object
+import projects from '../components/projects';
+
 export default function Portfolio() {
   return (
     <>
@@ -21,27 +24,12 @@ export default function Portfolio() {
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <Project />
-          </div>
-          <div class="col-lg-6">
-            <Project />
+            <Project projects={projects}/>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
-            <Project />
-          </div>
-          <div class="col-lg-6">
-            <Project />
-          </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
-            <Project />
-          </div>
-          <div class="col-lg-6">
-            <Project />
-          </div>
         </div>
         <Footer />
       </section>

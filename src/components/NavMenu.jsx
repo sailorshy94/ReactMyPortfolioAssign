@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 // obj destructuring - each prop obj var gets var name
 function NavMenu() {
@@ -6,11 +6,11 @@ function NavMenu() {
 
   return (
     <section style={{
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'flex-end',
-      justifyContent: 'flex-end',
-      fontSize: '27.5px'
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-end",
+      justifyContent: "flex-end",
+      fontSize: "27.5px"
     }}>
       <div>
         <ul className="nav">

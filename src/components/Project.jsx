@@ -1,7 +1,19 @@
-export default function Project() {
+export default function Project({ projects }) {
     return (
-        <>
-            <img src="./src/assets/meringue-app.png" style={{ width: "100%", height: "100%", padding: "30px" }}></img>
-        </>
-    );
-}
+        projects.forEach(project => {
+            <div class="col-lg-6">
+                <img className="proj" key={project.id} src={project.picture}>{project.title}</img>
+                <p>{project.desc}</p>
+            </div>
+        })
+    )}
+    // projects.map((project)) => (
+
+    // )
+            // <>
+            // <img src={project.picture}>{project.title}</img>
+            // <p>{project.description}</p>
+            // </>
+//         );
+//     };
+// }   
