@@ -10,7 +10,7 @@ export default function AboutMe() {
         <div>
           <Header />
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" style={{paddingTop: '45px'}}>
           <img src="./src/assets/challenge20avatarimg.png" alt="My picture" class="img-thumbnail"></img>
           <h1>About Me</h1>
           <body>
