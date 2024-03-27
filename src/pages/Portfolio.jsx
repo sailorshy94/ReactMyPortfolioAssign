@@ -26,10 +26,6 @@ export default function Portfolio() {
         <div class="row">
           <Project projects={projects} />
         </div>
-        <div class="row">
-        </div>
-        <div class="row">
-        </div>
         <Footer />
       </section >
     </>
