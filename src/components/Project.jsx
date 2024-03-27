@@ -1,19 +1,16 @@
+import { AiFillGithub } from "react-icons/ai";
+
 export default function Project({ projects }) {
     return (
-        projects.forEach(project => {
-            <div class="col-lg-6">
-                <img className="proj" key={project.id} src={project.picture}>{project.title}</img>
-                <p>{project.desc}</p>
-            </div>
-        })
-    )}
-    // projects.map((project)) => (
-
-    // )
-            // <>
-            // <img src={project.picture}>{project.title}</img>
-            // <p>{project.description}</p>
-            // </>
-//         );
-//     };
-// }   
+        <div className="proj-group">
+            {projects.map((project) => (
+                <div className="proj-item" key={project.id} class="col-lg-6">
+                    <img src={`${project.picture}`}></img>
+                        <a href={`${project.repoLink}`} target="blank">
+                            <AiFillGithub />
+                        </a>
+                </div>
+            ))}
+        </div>
+    );
+}

@@ -5,12 +5,13 @@
 // Language used - MERN stack, JS, etc.
 // layout should be three on one side next to three others, or three across above three across
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Project from '../components/Project';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Project from "../components/Project";
 
-// import proj object
-import projects from '../components/projects';
+// import projects from projects.js
+import projects from "../components/projects";
+
 
 export default function Portfolio() {
   return (
@@ -20,19 +21,17 @@ export default function Portfolio() {
       }}>
         <Header />
         <div className="container-fluid">
-          <h1 style={{ paddingTop: '45px' }}>My Portfolio</h1>
+          <h1 style={{ paddingTop: "45px" }}>My Portfolio</h1>
         </div>
         <div class="row">
-          <div class="col-lg-6">
-            <Project projects={projects}/>
-          </div>
+          <Project projects={projects} />
         </div>
         <div class="row">
         </div>
         <div class="row">
         </div>
         <Footer />
-      </section>
+      </section >
     </>
   );
 }
